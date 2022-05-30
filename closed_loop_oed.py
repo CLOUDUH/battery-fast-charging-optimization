@@ -301,9 +301,9 @@ def main():
                           str(args.epsilon)    + ',' +
                           str(args.seed))
 		elif args.round_idx == args.budget:
-         		log_file.write(',' + str(lifetime_best_arm) + '\n')
+			log_file.write(',' + str(lifetime_best_arm) + '\n')
 		else:
-         		log_file.write(',' + str(lifetime_best_arm))
+			log_file.write(',' + str(lifetime_best_arm))
 
 if __name__ == '__main__':
 
