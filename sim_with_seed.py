@@ -180,28 +180,7 @@ def sim(C1, C2, C3, mode='hi', variance=True, seed=0):
     # print("Lifetime = " + str(lifetime_meas))
     return lifetime_meas
 
-
-def parse_args():
-
-    parser = argparse.ArgumentParser(description='Simulator for battery lifetime')
-    parser.add_argument('--C1', default=1, type=float,
-                        help='constant current 1')
-    parser.add_argument('--C2', default=1, type=float,
-                        help='constant current 2')
-    parser.add_argument('--C3', default=1, type=float,
-                        help='constant current 3')
-    parser.add_argument('--seed', default=1, type=float,
-                        help='seed')
-    return parser.parse_args()
-
-
-def main():
-
-    args = parse_args()
-    lifetime = sim(args.C1, args.C2, args.C3, seed=args.seed)
-    print('Simulated lifetime is', lifetime)
-
-
 if __name__ == '__main__':
 
-    main()
+    lifetime = sim(3.6, 6, 5.6, seed=1)
+    print('Simulated lifetime is', lifetime)
