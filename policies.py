@@ -1,3 +1,10 @@
+'''
+Author: CLOUDUH
+Date: 2020-02-20 00:36:56
+LastEditors: CLOUDUH
+LastEditTime: 2022-05-30 20:47:08
+Description: 
+'''
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
@@ -26,6 +33,8 @@ C4_LIMITS = [0.1, 4.81] # Lower and upper limits specifying valid C4s
 
 DIR = sys.argv[1]
 FILENAME = sys.argv[2]
+
+print(DIR, FILENAME)
 
 ##############################################################################
 
